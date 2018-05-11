@@ -1,0 +1,98 @@
+---
+---
+
+
+/*****************************************************
+						Colors
+*****************************************************/
+$color_alto_approx: rgb(222, 222, 222);
+$color_cardinal_approx: rgb(184, 17, 36);
+$color_cardinal_approx_feature: rgb(150, 0, 23);
+$color_cardinal_approx_shade: rgb(220, 17, 36);
+$color_pumice_approx: rgb(200, 200, 200);
+$color_shady_lady_approx: rgb(165, 165, 165);
+$color_pippin_approx: rgb(255,222,223);
+$color_gray: #CECECE;
+$color_light_gray: rgb(236, 236, 236);
+$black: black;
+$color_silver_chalice_approx: #aaa;
+$color_light_blue: #55CBF3;
+
+/*****************************************************
+						Variables
+*****************************************************/
+
+$background_image: url("/img/awesome-inc-learn-to-code-homepage-bg-grayscale.jpg");
+
+/*****************************************************
+						Sizes
+*****************************************************/
+
+$tablet-width: 768px;
+$desktop-width: 1024px;
+$mobile-width: $tablet-width - 1;
+
+@mixin tablet {  /* 768-1023 */
+	@media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+		@content;
+	}
+}
+
+@mixin mobile {  /* < 768 */
+	@media (max-width: #{$mobile-width}) {
+		@content;
+	}
+}
+
+@mixin desktop { /* > 1024 */
+	@media (min-width: #{$desktop-width}) {
+		@content;
+	}
+}
+
+/*****************************************************
+					Hover States
+*****************************************************/
+@mixin setLinkSelectorStyle {
+	&:hover, &:active, &:focus {
+		@content;
+	}
+}
+
+/*****************************************************
+					Consistencies
+*****************************************************/
+
+a i {
+	color: black;
+}
+
+footer {
+	background-color: grey
+}
+
+/*****************************************************
+						Homepage
+*****************************************************/
+
+header {
+	background-image: url(../img/header-bg-kyla.jpg);
+}
+
+
+
+#give:before {
+	position: fixed;
+	background-image: url(../img/give-image.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-attachment: scroll;
+	filter: blur(5px);
+	// Browser Specific
+	-webkit-filter: blur(5px);
+	-moz-filter: blur(5px);
+	-o-filter: blur(5px);
+	-ms-filter: blur(5px);
+
+}
+
