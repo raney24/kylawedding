@@ -81,18 +81,34 @@ header {
 
 
 
-#give:before {
-	position: fixed;
-	background-image: url(../img/give-image.jpg);
-	background-position: center center;
-	background-size: cover;
-	background-attachment: scroll;
-	filter: blur(5px);
-	// Browser Specific
-	-webkit-filter: blur(5px);
-	-moz-filter: blur(5px);
-	-o-filter: blur(5px);
-	-ms-filter: blur(5px);
 
-}
+	/*.content:before {
+		content: "";
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: -1;
+
+		display: block;
+		background-image: url(../img/give-image.jpg);
+		background-position: center center;
+		background-size: cover;
+		background-attachment: scroll;
+		width: 100%;
+		height: 400px;
+
+		filter: blur(5px);
+		// Browser Specific
+		-webkit-filter: blur(5px);
+		-moz-filter: blur(5px);
+		-o-filter: blur(5px);
+		-ms-filter: blur(5px);
+	}
+	.content {
+		position: fixed;
+		left: 0;
+		right: 0;
+		z-index: 0;
+	}*/
+
 
