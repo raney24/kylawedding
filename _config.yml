@@ -13,6 +13,13 @@ color:
   secondary: 908d88  
   secondary-dark: 27181b
 
+# Sass settings
+sass:
+  add_charset: true
+  sass_dir: css/sass
+  style: :compressed
+  sourcemap: :true
+
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
   - title: twitter

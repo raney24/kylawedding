@@ -79,7 +79,21 @@ header {
 	background-image: url(../img/header-bg-kyla.jpg);
 }
 
+#event {
+	.col-md-6 {
+		height: 200px;
+	}
+}
 
+#faq {
+	li {
+		h4 {
+			text-transform: none;
+		}
+		text-align: left;
+		padding: 15px 0;
+	}
+}
 
 
 	/*.content:before {
