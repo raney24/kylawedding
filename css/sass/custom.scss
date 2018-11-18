@@ -71,6 +71,13 @@ footer {
 	background-color: grey
 }
 
+h1 {
+	margin: 30px 0;
+}
+
+.lower {
+	text-transform: none;
+}
 /*****************************************************
 						Homepage
 *****************************************************/
@@ -95,7 +102,17 @@ header {
 	}
 }
 
+#stay {
+	h4 {
+		text-transform: none;
+		text-align: center;
+		font-weight: 200;
+	}
+}
 
+#serve {
+	background-color: #aaa;
+}
 	/*.content:before {
 		content: "";
 		position: fixed;
